@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora';
+    box-sizing: border-box;
+}
+/* ------------ HEADER -------------- */
+header{
+    background: url(../img/header/bg.png) center;
+    min-height: 940px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #363636;
+    min-height: 50px;
+    width: 100%;
+}
+
+.header .header__social {
+    display: flex;
+    flex-wrap:wrap
+}
+.header .header__social a{
+    margin-right: 40px;
+}
+
+.header .header__social img{
+    height:15px;
+    width: 15px;
+    object-fit: contain;
+    transition: 0.1s;
+}
+.header .header__social img:hover{
+    transform: scale(1.3);
+}
+
+.header .header__email_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    height:50px;
+    padding: 5px;
+    color:#646464;
+    font-size: 13px;
+}
+.header .header__email_input label{
+    margin-right: 10px;
+}
+
+.header .header__email_input input{
+    border: 1px solid #b89f5c;
+    background-color:#363636;
+    color:white;
+}
+.header .header__email_input input[type = email]{
+    width: 100%;
+    max-width: 150px;
+}
+.header .header__email_input input[type = submit]{
+    border:none;
+    color:#b89f5c;
+}
+
+.header__close_header{
+    cursor: pointer;
+    position: absolute;
+    right:20px;
+}
+/* ------------------NAV INTRO PROMO------------------- */
+.navigation{
+    height:210px;
+    width: 100%;
+    background: rgba( 0, 0, 0, 0.36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navigation img{
+    margin-bottom: 25px;
+    object-fit: contain;
+}
+.navigation nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navigation nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color:#b89f5c;
+    margin: 0 15px;
+}
+.navigation nav a:hover{
+    text-decoration: underline;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.intro h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.promotion {
+    display: flex;
+    min-height: 70px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #363636;
+    font-size: 18px;
+    color: #b89f5c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 0 10px;
+}
+
+/* ---------- GREETING ------------ */
+
+.greeting{
+    display: flex;
+    align-items: stretch;
+    background: url(../img/greeting/horse.png)  1000px 50px no-repeat;
+    min-height: 850px;
+    background-color: #dddddd;
+}
+
+.greeting .headline{
+    margin-bottom: 100px;
+}
+
+.greeting .greeting-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+    width:100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.greeting p{
+    max-width: 630px;
+    margin: 20px 0 20px 40px;
+    padding: 10px;
+    width: 100%;
+    font-size: 25px;
+    color: #848484;
+}
+
+.greeting .gretting-button{
+    display: flex;
+    align-items: center;
+    margin: 50px 0 50px 40px;
+}
+.greeting a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c0ab77;
+    color: #c0ab77;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 65px;
+    width: 230px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+.greeting .line_gold{
+
+}
+.greeting a:hover{
+    color:black;
+    border-color:black;
+}
+.greeting a:hover ~ .line_gold{
+    background-color: black;
+}
+
+.greeting .gold-text{
+    color:#c0ab77;
+}
+
+/*----------------PROMO--------------------*/
+
+.promo{
+    display: flex;
+    background: url(../img/promo/promo-bg.png);
+    text-align: center;
+    min-height: 480px;
+}
+
+.promo__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    flex-basis: 350px;
+    flex-grow: 1;
+    padding: 10px;
+}
+.promo h1{
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:#c0ab77;
+}
+.promo__item_membership p{
+    width:100%;
+    max-width:600px;
+    margin: 50px auto;
+    font-size: 25px;
+    color: white;
+}
+.promo .form-wrapper #email-form{
+    display: flex;
+    justify-content: center;
+}
+.promo__item_membership a,
+.promo__item_newsletter button{
+    color:white;
+    font-size: 20px;
+    line-height: 60px;
+    border:1px solid #c0ab77;
+    text-decoration: none;
+    text-transform: uppercase; 
+    background-color: #c0ab77;
+    transition: 0.3s;
+}
+.promo__item_membership a:hover,
+.promo__item_newsletter button:hover{
+    background-color: #52482e;
+}
+.promo__item_membership{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.promo__item_newsletter{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.promo__item_membership a{
+    align-self: center;
+    width: 230px;
+}
+.promo__item_newsletter label{
+    font-size: 25px;
+    color:white;
+    margin-bottom: 50px;
+}
+.promo__item_newsletter label u{
+    text-decoration: none;
+}
+.promo__item_newsletter button{
+    width: 150px;
+    white-space: nowrap;
+}
+.promo__item_newsletter input[type=email]{
+    line-height: 60px;
+    border:none;
+    width: 100%;
+    max-width: 290px;
+    margin-right: 4px;
+    font-size:25px;
+    color:#c0ab77;
+    padding-left: 10px;
+}
+.promo__item_newsletter input[type=email]::placeholder{
+    font-size: 20px;
+    color: #c0bebe;
+}
+.promo__item_newsletter h1{
+    margin: 30px 0;
+}
+.promo__item_newsletter img{
+    object-fit: contain;
+}
+
+/* ----------------SERVICES------------------ */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.services .headline{
+    margin: 50px 0;
+}
+.services .services__about-services{
+    padding: 0 10px;
+    max-width: 1000px;
+    font-size: 25px;
+    color:#c0ab77;
+}
+.services .services__about-services:after{
+    display: block;
+    content: '';
+    height: 1px;
+    width: 200px;
+    background-color: #c1c1c1;
+    margin: 40px auto;
+}
+.services .services__img-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.services .services__img-container img{
+    padding: 10px;
+    width:33.33%;
+}
+/* ------------------ SUBSCRIPTIONS ----------------- */
+.subscriptions{
+    background: url(../img/subscriptions/subscriptions-bg.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 840px;
+}
+.subscriptions .text-offer{
+    color:#c0ab77;
+    font-size: 25px;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto 50px;
+}
+.subscriptions .subscriptions__item-container{
+    display: flex;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.subscriptions .subscription__item{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 1px solid #c0ab77;
+    width:100%;
+    max-width:280px;
+    margin: 5px;
+    min-width:165px;
+}
+.subscriptions .headline img{
+    margin-top:10px;
+    object-fit: contain;
+}
+.subscriptions .subscriptions-type{
+    font-size: 18px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.subscriptions .subscriptions-price{
+    font-size: 40px;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #c0ab77;
+}
+.subscriptions .subscriptions-about{
+    font-size: 18px;
+    width: 100%;
+    max-width: 270px;
+    margin: 40px 0;
+}
+.subscriptions .subscription-about_wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+.subscriptions .subscription-about_wrapper a{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    line-height: 60px;
+    border:none;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #c0ab77;
+    border-bottom:none;
+    background-color: #c0ab77;
+    align-self: center;
+    width:100%;
+    max-width: 230px;
+    transition: 0.3s;
+}
+.subscriptions .subscription-about_wrapper a:hover{
+    background-color: #52482e;
+}
+/* ------------------NEWS------------------ */
+.news{
+    background: url(../img/news/news-bg.png) center bottom no-repeat;
+
+}
+.news .news-wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.news .headline{
+    margin-top: 20px;
+}
+.news .headline-describer{
+    font-size: 25px;
+    color:#b89f5c;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.news .news__item_wrapper{
+    border-left: 1px solid #b89f5c;
+    margin-left: auto;
+    max-width:900px;
+}
+.news .news__item{
+    display:flex;
+    margin-bottom: 40px;
+}
+.news .news__date{
+    align-self: center;
+    text-align: center;
+    border: 1px solid #b89f5c;
+    font-size: 35px;
+    color:#b89f5c;
+    min-width: 95px;
+    height: 95px;
+    margin: 0 30px 0 50px;
+}
+.news .news__info{
+    padding: 0 10px;
+}
+.news .news__info h2{
+    font-size: 33px;
+    color:#c0ab77;
+    margin-bottom: 20px;
+}
+.news .news__info p{
+    font-size: 25px;
+    color:#8a8a8a; 
+    margin-bottom: 10px;
+}
+.news .news__info .news__info_viev-more{
+    color:black;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.news .news__info .news__info_viev-more:hover{
+    color:rgb(100, 100, 100);
+}
+/* ------------------COMENTS------------------ */
+
+.quote-wrap{
+    display: flex;
+    align-items: center;
+}
+.coments .slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+.coments .slider-container .slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.coments .slider-container .slide img{
+    border-radius: 100%;
+}
+.coments .slider-container .slide .quote{
+    max-width:700px;
+    margin: 30px auto;
+    font-size: 25px;
+}
+.coments .slider-container .slide .name{
+    font-size: 25px;
+    color:#b89f5c;
+    margin-bottom: 15px;
+}
+.coments .slider-container .slide .company{
+    font-size: 17px;
+    color:#bcbcbc;
+}
+.coments .slider-container .next,
+.coments .slider-container .prev{
+    cursor: pointer;
+    font-size: 40px;
+    color:#aaaaaa;
+    margin: 0 20px;
+}
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+@-webkit-keyframes fade{
+	from{opacity: .4;}
+	to{opacity: 1;}
+}
+@keyframes fade{
+	from{opacity: .4;}
+	to{opacity: 1;}
+}
+/* ------------------GALLERY------------------ */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery img{
+    flex-grow: 1;
+    width: 20%;
+    min-width: 120px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/*-------------- Style items --------------*/
+
+/* Headline ------*/
+.headline{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.headline h1 {
+    width: max-content;
+    text-align: center;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#1b1b1b;
+    margin:0 20px;
+}
+.headline .line {
+    height: 1px;
+    width: calc(100vw * 0.15);
+    background-color: #848484;
+    margin: 15px 0;
+}
+.headline .line_gold,
+.gretting-button .line_gold {
+    height: 1px;
+    width: calc(100vw * 0.12);
+    background-color: #c0ab77;
+}
+.headline .headline_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* ----------------MEDIA--------------- */
+
+@media (max-width:700px){
+
+    /* Styles items */
+    .headline{
+        margin:0;
+    }
+    .headline .line {
+        height: 1px;
+        width: 30px;
+        margin: 8px 0;
+    }
+    .headline .line_gold {
+        height: 1px;
+        width: 15px;
+    }
+    .headline h1 {
+        font-size: 20px;
+    }
+    /* Styles items end */
+    /* ---------------------HEADER */
+    header{
+        min-height: 600px;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .header__social{
+        justify-content: space-around;
+        margin:0;
+    }
+
+    .header__close_header{
+        top:5px;
+        right: 5px;
+    }
+    .header .header__email_input input[type = email]{
+        max-width: 120px;
+    }
+    /* ---------------------INTRO */
+    .intro h1{
+        font-size: 40px;
+    }
+    /*-----------------------GREETING */
+    .greeting{
+        text-align: center;
+        min-height: 400px;
+    }
+    .greeting p {
+        font-size: 14px;
+        margin:0;
+    }
+    .greeting .gretting-button{
+        margin: 0;
+        justify-content: center;
+        transform: scale(0.7);
+    }
+    
+    .gretting-button .line_gold{
+        display: none;
+    }
+    .greeting .headline{
+        margin-bottom: 10px;
+    }
+    /*----------------------------PROMO */
+    .promo{
+        flex-wrap:wrap;
+    }
+    .promo p,.promo u {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+    }
+    .promo label{
+        margin:0 0 10px 0;
+    }
+    .promo h1{
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    .promo a, .promo .form-wrapper{
+        transform: scale(0.7);
+    }
+    /*---------------------------- SERVICES */
+    .services .services__about-services{
+        font-size: 16px;
+    }
+    .services .services__about-services:after{
+        margin: 20px auto;
+    }
+    .services .headline{
+        margin: 30px 0;
+    }
+    .services .services__img-container{
+        margin-bottom: 20px;
+    }
+    /* -------------------------SUBSCRIPTIONS */
+    .subscriptions{
+        min-height: 500px;
+        padding: 20px 0;
+    }
+
+    .subscriptions .text-offer{
+        font-size: 16px;
+        padding: 20px;
+        margin: 0;
+    }
+    .subscriptions .subscription-about_wrapper a{
+        line-height: 30px;
+        font-size:15px;
+    }
+    .subscriptions .subscriptions-type{
+        font-size: 16px;
+        margin-top: 8px;
+        text-transform: uppercase;
+    }
+    .subscriptions .subscriptions-price{
+        font-size: 22px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid #c0ab77;
+    }
+    .subscriptions .subscriptions-about{
+        font-size: 14px;
+        width: 100%;
+        max-width: 240px;
+        margin:10px 0;
+    }
+
+    /* ------------------------------ NEWS */
+    .news .news-wrapper{
+        min-height: 500px;
+    }
+    .news .news__item_wrapper{
+        margin:0 auto;
+        border: none;
+    }
+    .news .headline-describer{
+        margin-bottom: 20px;
+    }
+    .news .news__date{
+        font-size: 12px;
+        min-width: 30px;
+        max-width: 30px;
+        height: 30px;
+        margin: 0 10px 0 20px;
+    }
+    .news .news__info h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .news .news__info p{
+        max-width:350px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    /* ---------------------COMENTS */
+
+    .coments .slider-container{
+        min-height: 300px;
+        padding: 20px 0;
+    }
+    .coments .slider-container .slide .quote{
+        max-width:700px;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    .coments .slider-container .slide .name{
+        font-size: 20px;
+        color:#b89f5c;
+        margin-bottom: 15px;
+    }
+    .coments .slider-container .slide .company{
+        font-size: 14px;
+        color:#bcbcbc;
+    }
+    .coments .slider-container .next,
+    .coments .slider-container .prev{
+        cursor: pointer;
+        font-size: 30px;
+        color:#aaaaaa;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:480px){
+    .services .services__img-container img{
+        width:80%;
+    }
+}

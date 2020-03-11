@@ -25,6 +25,7 @@ h3{
 /* ------------ HEADER -------------- */
 header{
     background: url(../img/header/bg.png) center;
+    background-size: cover;
     min-height: 940px;
     display: flex;
     flex-direction: column;
@@ -218,6 +219,7 @@ header{
 .promo{
     display: flex;
     background: url(../img/promo/promo-bg.png);
+    background-size: cover;
     text-align: center;
     min-height: 480px;
 }

@@ -107,6 +107,7 @@ header{
     object-fit: contain;
 }
 .navigation nav ul{
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

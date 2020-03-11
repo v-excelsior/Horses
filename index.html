@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -27,12 +29,14 @@
         <div class="navigation">
             <img src="img/header/logo.png" alt="logo">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Services</a>
-                <a href="#">Events</a>
-                <a href="#">About us</a>
-                <a href="#">Contact</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul> 
             </nav>
         </div>
         <div class="intro">
@@ -50,7 +54,7 @@
                     <div class="line"></div>
                     <div class="line_gold"></div>
                 </div>
-                <h1>Welcome</h1>
+                <h2>Welcome</h2>
                 <div class="headline_right">
                     <div class="line_gold"></div>
                     <div class="line"></div>
@@ -73,7 +77,7 @@
 
     <section class="promo">
         <div class="promo__item promo__item_membership">
-            <h1>Membership</h1>
+            <h2>Membership</h2>
             <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, Nemo enim ipsam voluptatem quia
             </p>
@@ -81,14 +85,14 @@
         </div>
         <div class="promo__item promo__item_newsletter">
             <img src="img/header/logo.png">
-            <h1>Newsletter</h1>
-                <label for="email2"><u>Sing up for some news!</u></label>
-                <div class="form-wrapper">
-                    <form id="email-form">
-                        <input type="email" id="email-form" name="email-form" placeholder=" Your email address" required>
-                        <button type="submit" form="email-form" >Sing up</button>
-                    </form>
-                </div>
+            <h2>Newsletter</h2>
+            <label for="email2"><u>Sing up for some news!</u></label>
+            <div class="form-wrapper">
+                <form id="email-form">
+                    <input type="email" id="email-form" name="email-form" placeholder=" Your email address" required>
+                    <button type="submit" form="email-form" >Sing up</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -99,7 +103,7 @@
                 <div class="line"></div>
                 <div class="line_gold"></div>
             </div>
-            <h1>Horse club services</h1>
+            <h2>Horse club services</h2>
             <div class="headline_right">
                 <div class="line_gold"></div>
                 <div class="line"></div>
@@ -171,7 +175,7 @@
                     <div class="line"></div>
                     <div class="line_gold"></div>
                 </div>
-                <h1>Latest news</h1>
+                <h2>Latest news</h2>
                 <div class="headline_right">
                     <div class="line_gold"></div>
                     <div class="line"></div>
@@ -232,39 +236,33 @@
     </section>
     <section class="coments">
         <div class="promotion">What our visitors say about us</div>
-        <div class="slider-container">
-            <div class="slide fade">
+        <div class="slider single-item">
+            <div class="slide">
                 <img src="img/coments/foto-1.png" alt="foto1">
                 <div class="quote-wrap">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
                     <p class="quote">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <a class="next" onclick="plusSlides(1)">&#10095</a>
                 </div>
                 <p class="name">Autor1</p>
                 <p class="company">Company</p>
             </div>
-            <div class="slide fade">
+            <div class="slide">
                 <img src="img/coments/foto-2.png" alt="foto1">
                 <div class="quote-wrap">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
                     <p class="quote">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <a class="next" onclick="plusSlides(1)">&#10095</a>
                 </div>
                 <p class="name">Autor2</p>
                 <p class="company">Company</p>
             </div>
-            <div class="slide fade">
+            <div class="slide">
                 <img src="img/coments/foto-3.png" alt="foto1">
                 <div class="quote-wrap">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
                     <p class="quote">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <a class="next" onclick="plusSlides(1)">&#10095</a>
                 </div>
                 <p class="name">Autor3</p>
                 <p class="company">Company</p>
@@ -282,6 +280,46 @@
         <div class="promotion">Where you can find us</div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1239.207255141314!2d28.656576429160417!3d50.25388238689072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b0e79078739c003!2z0JbQuNGC0L7QvNC40YDRgdC60LjQuSDQs9C-0YDQvtC00YHQutC-0Lkg0L7RgtC00LXQuyDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdC-0Lkg0YDQtdCz0LjRgdGC0YDQsNGG0LjQuCDQsNC60YLQvtCyINCz0YDQsNC20LTQsNC90YHQutC-0LPQviDRgdC-0YHRgtC-0Y_QvdC40Y8!5e0!3m2!1sru!2sua!4v1583659779791!5m2!1sru!2sua" width="100%" height="330" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <img class="logo" src="img/header/logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Horses</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">FaQ</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div class="socials">
+                <span>Follow us on</span>
+                <a href="#"><img src="img/header/twitter.png"></a>
+                <a href="#"><img src="img/header/fb.png"></a>
+                <a href="#"><img src="img/header/pinterest.png"></a>
+                <a href="#"><img src="img/header/inst.png"></a>
+            </div>
+            <form class="email-footer">
+                <label for="email-footer">Subscribe to our newsletter</label>
+                <div class="email-input-wrapper">
+                    <input type="email" id="email-footer" placeholder="your@email.com" required >
+                    <button>Send</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    
+    
 </body>
 </html>

@@ -4,6 +4,24 @@
     font-family: 'Lora';
     box-sizing: border-box;
 }
+
+h1,h2,h3{
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: normal;
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 33px;
+    
+}
+h3{
+    font-size: 18px;
+}
+
 /* ------------ HEADER -------------- */
 header{
     background: url(../img/header/bg.png) center;
@@ -87,7 +105,7 @@ header{
     margin-bottom: 25px;
     object-fit: contain;
 }
-.navigation nav {
+.navigation nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -109,24 +127,19 @@ header{
     text-align: center;
     flex-grow: 1;
 }
-
 .intro h1{
     color: white;
-    font-size: 70px;
-    font-weight: 400;
-    text-transform: uppercase;
-    word-wrap: break-word;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 900px;
-    width: 100%;
 }
 
 .promotion {
     display: flex;
-    min-height: 70px;
-    text-align: center;
+    height: 70px;
+    width:100%;
     justify-content: center;
+    text-align: center;
     align-items: center;
     background: #363636;
     font-size: 18px;
@@ -187,9 +200,7 @@ header{
     text-decoration: none;
     transition: 0.1s;
 }
-.greeting .line_gold{
 
-}
 .greeting a:hover{
     color:black;
     border-color:black;
@@ -220,11 +231,9 @@ header{
     flex-grow: 1;
     padding: 10px;
 }
-.promo h1{
-    font-size: 33px;
-    font-weight: 400;
-    text-transform: uppercase;
+.promo h2{
     color:#c0ab77;
+    margin: 15px 0;
 }
 .promo__item_membership p{
     width:100%;
@@ -477,61 +486,43 @@ header{
     color:rgb(100, 100, 100);
 }
 /* ------------------COMENTS------------------ */
-
+.coments{
+    overflow: hidden;
+}
 .quote-wrap{
     display: flex;
     align-items: center;
 }
-.coments .slider-container{
+.coments .slider{
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 500px;
+    height: 500px;
 }
-.coments .slider-container .slide{
+.coments .slider .slide{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.coments .slider-container .slide img{
+.coments .slider .slide img{
     border-radius: 100%;
 }
-.coments .slider-container .slide .quote{
+.coments .slide .quote{
     max-width:700px;
     margin: 30px auto;
     font-size: 25px;
 }
-.coments .slider-container .slide .name{
+.coments .slider .slide .name{
     font-size: 25px;
     color:#b89f5c;
     margin-bottom: 15px;
 }
-.coments .slider-container .slide .company{
+.coments .slider .slide .company{
     font-size: 17px;
     color:#bcbcbc;
 }
-.coments .slider-container .next,
-.coments .slider-container .prev{
-    cursor: pointer;
-    font-size: 40px;
-    color:#aaaaaa;
-    margin: 0 20px;
-}
-.fade{
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1s;
-	animation-name: fade;
-	animation-duration: 1s;
-}
-@-webkit-keyframes fade{
-	from{opacity: .4;}
-	to{opacity: 1;}
-}
-@keyframes fade{
-	from{opacity: .4;}
-	to{opacity: 1;}
-}
+
+
 /* ------------------GALLERY------------------ */
 .gallery{
     display: flex;
@@ -547,6 +538,80 @@ header{
     object-fit: cover;
 }
 
+/*-------------------FOOTER---------------------*/
+footer{
+    background-color: #212121;
+    padding: 10px;
+    padding-top: 50px;
+    min-height: 350px;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+footer .logo{
+    height: 200px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+footer ul{
+    list-style: none;
+    min-width: 100px;
+}
+footer li{
+    margin-bottom: 10px;
+}
+footer li a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+}
+footer li a:hover{
+    text-decoration: underline;
+}
+footer .socials span{
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+}
+footer .socials img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #303030;
+    object-fit: scale-down;
+}
+footer .email-footer label{
+    display: block;
+    color:#aeb0b5;
+    margin-bottom: 10px;
+}
+footer .email-footer .email-input-wrapper{
+    display: flex;
+    width:100%;
+    max-width: 270px;
+    background-color: #212121;
+    border: 1px solid #b89f5c;
+}
+footer .email-footer input[type=email],
+footer .email-footer .email-input-wrapper button {
+    font-size: 16px;
+    background-color: #212121;
+    border: none;
+    color:#aeb0b5;
+    padding: 10px;
+}
+footer .email-footer .email-input-wrapper button{
+    text-transform: uppercase;
+}
+footer .email-footer input[type=email]{
+    width: calc(100% - 62px)
+}
+
 /*-------------- Style items --------------*/
 
 /* Headline ------*/
@@ -556,7 +621,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.headline h1 {
+.headline h2 {
     width: max-content;
     text-align: center;
     font-size: 33px;
@@ -600,8 +665,12 @@ header{
         height: 1px;
         width: 15px;
     }
-    .headline h1 {
+    .headline h2 {
         font-size: 20px;
+    }
+    .promotion{
+        font-size:14px;
+        height: 40px;
     }
     /* Styles items end */
     /* ---------------------HEADER */
@@ -658,7 +727,7 @@ header{
     .promo label{
         margin:0 0 10px 0;
     }
-    .promo h1{
+    .promo h2{
         font-size: 24px;
         margin: 20px 0;
     }
@@ -738,31 +807,88 @@ header{
         margin-bottom: 10px;
     }
     /* ---------------------COMENTS */
-
-    .coments .slider-container{
+    .coments .slider{
+        height: 400px;
+    }
+    .coments .slide .slider-container{
         min-height: 300px;
         padding: 20px 0;
     }
-    .coments .slider-container .slide .quote{
-        max-width:700px;
-        margin: 10px auto;
-        font-size: 18px;
+    .coments .slide .quote{
+        font-size: 14px;
     }
-    .coments .slider-container .slide .name{
+    .coments .slide .name{
         font-size: 20px;
         color:#b89f5c;
         margin-bottom: 15px;
     }
-    .coments .slider-container .slide .company{
+    .coments .slide .company{
         font-size: 14px;
         color:#bcbcbc;
     }
-    .coments .slider-container .next,
-    .coments .slider-container .prev{
-        cursor: pointer;
-        font-size: 30px;
-        color:#aaaaaa;
-        margin: 0 10px;
+    /* --------------------------FOOTER */
+    footer{
+        padding: 0;
+        text-align: center;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    footer .logo{
+        width: 100%;
+        height: min-content;
+        margin: 20px;
+    }
+    footer ul{
+        width:30%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer li{
+        margin-bottom: 5px;
+    }
+    footer .socials span{
+        color: white;
+        display: block;
+        margin-bottom: 10px;
+    }
+    footer .socials img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid #303030;
+        object-fit: scale-down;
+    }
+    footer form{
+        margin:10px;
+    }
+    footer .email-footer label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    footer .email-footer .email-input-wrapper{
+        display: flex;
+        width:100%;
+        max-width: 270px;
+        background-color: #212121;
+        border: 1px solid #b89f5c;
+    }
+    footer .email-footer input[type=email],
+    footer .email-footer .email-input-wrapper button {
+        font-size: 16px;
+        background-color: #212121;
+        border: none;
+        color:#aeb0b5;
+        padding: 10px;
+    }
+    footer .email-footer .email-input-wrapper button{
+        text-transform: uppercase;
+    }
+    footer .email-footer input[type=email]{
+        width: calc(100% - 62px)
     }
 }
 
@@ -771,3 +897,4 @@ header{
         width:80%;
     }
 }
+

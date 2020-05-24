@@ -29,10 +29,6 @@
         }
     }
 }
-.quote-wrap {
-    display: flex;
-    align-items: center;
-}
 @include screen {
     .coments {
         .slider {
@@ -57,4 +53,8 @@
             }
         }
     }
+}
+.quote-wrap {
+    display: flex;
+    align-items: center;
 }

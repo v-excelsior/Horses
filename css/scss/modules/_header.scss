@@ -14,6 +14,9 @@ header{
     min-height: 50px;
     width: 100%;
 }
+.wrapper{
+    display: flex;
+}
 
 .header .header__social {
     display: flex;

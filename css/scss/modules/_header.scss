@@ -1,0 +1,89 @@
+header{
+    background: url(../img/header/bg.png) center;
+    background-size: cover;
+    min-height: 940px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #363636;
+    min-height: 50px;
+    width: 100%;
+}
+
+.header .header__social {
+    display: flex;
+    flex-wrap:wrap
+}
+.header .header__social a{
+    margin-right: 40px;
+}
+
+.header .header__social img{
+    height:15px;
+    width: 15px;
+    object-fit: contain;
+    transition: 0.1s;
+}
+.header .header__social img:hover{
+    filter: brightness(0.4);
+}
+
+.header .header__email_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    height:50px;
+    padding: 5px;
+    color:#646464;
+    font-size: 13px;
+}
+.header .header__email_input label{
+    margin-right: 10px;
+}
+
+.header .header__email_input input{ 
+    border: 1px solid #b89f5c;
+    background-color:#363636;
+    color:white;
+}
+.header .header__email_input input[type = email]{
+    width: 100%;
+    max-width: 150px;
+}
+.header .header__email_input input[type = submit]{
+    border:none;
+    color:#b89f5c;
+}
+
+.header__close_header{
+    cursor: pointer;
+    position: absolute;
+    right:20px;
+}
+
+@include screen {
+    /* ---------------------HEADER */
+    header{
+        min-height: 600px;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .header__social{
+        justify-content: space-around;
+        margin:0;
+    }
+
+    .header__close_header{
+        top:5px;
+        right: 5px;
+    }
+    .header .header__email_input input[type = email]{
+        max-width: 120px;
+    }   
+}

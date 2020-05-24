@@ -1,0 +1,84 @@
+.greeting{
+    display: flex;
+    align-items: stretch;
+    background: url(../img/greeting/horse.png)  1000px 50px no-repeat;
+    min-height: 850px;
+    background-color: #dddddd;
+}
+
+.greeting .headline{
+    margin-bottom: 100px;
+}
+
+.greeting .greeting-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+    width:100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.greeting p{
+    max-width: 630px;
+    margin: 20px 0 20px 40px;
+    padding: 10px;
+    width: 100%;
+    font-size: 25px;
+    color: #848484;
+}
+
+.greeting .gretting-button{
+    display: flex;
+    align-items: center;
+    margin: 50px 0 50px 40px;
+}
+.greeting a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c0ab77;
+    color: #c0ab77;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 65px;
+    width: 230px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.greeting a:hover{
+    color:black;
+    border-color:black;
+}
+.greeting a:hover ~ .line_gold{
+    background-color: black;
+}
+
+.greeting .gold-text{
+    color:#c0ab77;
+}
+
+@include screen {
+    .greeting{
+        text-align: center;
+        min-height: 400px;
+    }
+    .greeting p {
+        font-size: 14px;
+        margin:0;
+    }
+    .greeting .gretting-button{
+        margin: 0;
+        justify-content: center;
+        transform: scale(0.7);
+    }
+    
+    .gretting-button .line_gold{
+        display: none;
+    }
+    .greeting .headline{
+        margin-bottom: 10px;
+    }
+}

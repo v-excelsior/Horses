@@ -1,109 +1,124 @@
-.promo{
-    display: flex;
-    background: url(../img/promo/promo-bg.png);
-    background-size: cover;
-    text-align: center;
-    min-height: 480px;
+.promo {
+  display: flex;
+  background: url(../img/promo/promo-bg.png);
+  background-size: cover;
+  text-align: center;
+  min-height: 480px;
 }
 
 .promo__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    flex-basis: 350px;
-    flex-grow: 1;
-    padding: 10px;
-}
-.promo h2{
-    color:#c0ab77;
-    margin: 15px 0;
-}
-.promo__item_membership p{
-    width:100%;
-    max-width:600px;
-    margin: 50px auto;
-    font-size: 25px;
-    color: white;
-}
-.promo .form-wrapper #email-form{
-    display: flex;
-    justify-content: center;
-}
-.promo__item_membership a,
-.promo__item_newsletter button{
-    color:white;
-    font-size: 20px;
-    line-height: 60px;
-    border:1px solid #c0ab77;
-    text-decoration: none;
-    text-transform: uppercase; 
-    background-color: #c0ab77;
-    transition: 0.3s;
-}
-.promo__item_membership a:hover,
-.promo__item_newsletter button:hover{
-    background-color: #52482e;
-}
-.promo__item_membership{
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.promo__item_newsletter{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.promo__item_membership a{
-    align-self: center;
-    width: 230px;
-}
-.promo__item_newsletter label{
-    font-size: 25px;
-    color:white;
-    margin-bottom: 50px;
-}
-.promo__item_newsletter label u{
-    text-decoration: none;
-}
-.promo__item_newsletter button{
-    width: 150px;
-    white-space: nowrap;
-}
-.promo__item_newsletter input[type=email]{
-    line-height: 60px;
-    border:none;
-    width: 100%;
-    max-width: 290px;
-    margin-right: 4px;
-    font-size:25px;
-    color:#c0ab77;
-    padding-left: 10px;
-}
-.promo__item_newsletter input[type=email]::placeholder{
-    font-size: 20px;
-    color: #c0bebe;
-}
-.promo__item_newsletter h1{
-    margin: 30px 0;
-}
-.promo__item_newsletter img{
-    object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  flex-basis: 350px;
+  flex-grow: 1;
+  padding: 10px;
 }
 
-@include screen{
-    .promo{
-        flex-wrap:wrap;
-    }
-    .promo p,.promo u {
-        font-size: 16px;
-        margin: 0 0 10px 0;
-    }
-    .promo label{
-        margin:0 0 10px 0;
-    }
-    .promo h2{
-        font-size: 24px;
-        margin: 20px 0;
-    }
-    .promo a, .promo .form-wrapper{
-        transform: scale(0.7);
-    }
+.promo h2 {
+  color: #c0ab77;
+  margin: 15px 0;
+}
+
+.promo__item_membership p {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  font-size: 25px;
+  color: white;
+}
+
+.promo .form-wrapper #email-form {
+  display: flex;
+  justify-content: center;
+}
+
+.promo__item_membership a,
+.promo__item_newsletter button {
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  border: 1px solid #c0ab77;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #c0ab77;
+  transition: 0.3s;
+}
+
+.promo__item_membership a:hover,
+.promo__item_newsletter button:hover {
+  background-color: #52482e;
+}
+
+.promo__item_membership {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.promo__item_newsletter {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.promo__item_membership a {
+  align-self: center;
+  width: 230px;
+}
+
+.promo__item_newsletter label {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.promo__item_newsletter label u {
+  text-decoration: none;
+}
+
+.promo__item_newsletter button {
+  width: 150px;
+  white-space: nowrap;
+}
+
+.promo__item_newsletter input[type=email] {
+  line-height: 60px;
+  border: none;
+  width: 100%;
+  max-width: 290px;
+  margin-right: 4px;
+  font-size: 25px;
+  color: #c0ab77;
+  padding-left: 10px;
+}
+
+.promo__item_newsletter input[type=email]::placeholder {
+  font-size: 20px;
+  color: #c0bebe;
+}
+
+.promo__item_newsletter h1 {
+  margin: 30px 0;
+}
+
+.promo__item_newsletter img {
+  object-fit: contain;
+}
+
+@include screen {
+  .promo {
+    flex-wrap: wrap;
+  }
+  .promo p, .promo u {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  .promo label {
+    margin: 0 0 10px 0;
+  }
+  .promo h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  .promo a, .promo .form-wrapper {
+    transform: scale(0.7);
+  }
 }

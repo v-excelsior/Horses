@@ -1,60 +1,78 @@
+//no code style
+
 .comments {
-    overflow: hidden;
-    .slider {
-        display: flex;
-        align-items: center;
-        height: 500px;
-    }
-    .slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        img {
-            border-radius: 100%;
-        }
-        .quote {
-            max-width: 700px;
-            margin: 30px auto;
-            font-size: 25px;
-        }
-        .name {
-            font-size: 25px;
-            color: #b89f5c;
-            margin-bottom: 15px;
-        }
-        .company {
-            font-size: 17px;
-            color: #bcbcbc;
-        }
-    }
-}
-@include screen {
-    .coments {
-        .slider {
-            height: 400px;
-        }
-        .slide {
-            .slider-container {
-                min-height: 300px;
-                padding: 20px 0;
-            }
-            .quote {
-                font-size: 14px;
-            }
-            .name {
-                font-size: 20px;
-                color: #b89f5c;
-                margin-bottom: 15px;
-            }
-            .company {
-                font-size: 14px;
-                color: #bcbcbc;
-            }
-        }
-    }
-}
-.quote-wrap {
+  overflow: hidden;
+
+  .slider {
     display: flex;
     align-items: center;
+    height: 500px;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      border-radius: 100%;
+    }
+
+    .quote {
+      max-width: 700px;
+      margin: 30px auto;
+      font-size: 25px;
+    }
+
+    .name {
+      font-size: 25px;
+      color: #b89f5c;
+      margin-bottom: 15px;
+    }
+
+    .company {
+      font-size: 17px;
+      color: #bcbcbc;
+    }
+  }
+}
+
+@include screen {
+  //typo
+  .coments {
+    .slider {
+      //fixed size
+      height: 400px;
+    }
+
+    .slide {
+      .slider-container {
+        min-height: 300px;
+        padding: 20px 0;
+      }
+
+      .quote {
+        font-size: 14px;
+      }
+
+      .name {
+        font-size: 20px;
+        //no vars
+        color: #b89f5c;
+        margin-bottom: 15px;
+      }
+
+      .company {
+        font-size: 14px;
+        //no vars
+        color: #bcbcbc;
+      }
+    }
+  }
+}
+
+.quote-wrap {
+  display: flex;
+  align-items: center;
 }

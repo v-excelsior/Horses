@@ -1,142 +1,186 @@
+//code style
+
+//class
 footer {
-    background-color: #212121;
-    padding: 50px 10px;
-    .logo {
-        height: 200px;
-        object-fit: contain;
-        margin-right: 20px;
-    }
-    ul {
-        list-style: none;
-        min-width: 100px;
-        li {
-            margin-bottom: 10px;
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 16px;
-                &:hover {
-                    color: #aeb0b5;
-                    text-decoration: underline;
-                }
-            }
+  //vars
+  background-color: #212121;
+  padding: 50px 10px;
+
+  .logo {
+    height: 200px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+
+  //class
+  ul {
+    list-style: none;
+    min-width: 100px;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+
+        &:hover {
+          //var
+          color: #aeb0b5;
+          text-decoration: underline;
         }
+      }
     }
-    .socials {
-        span {
-            color: white;
-            display: block;
-            margin-bottom: 20px;
-        }
-        img {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            border: 1px solid #303030;
-            object-fit: scale-down;
-            &:hover {
-                border: 1px solid white;
-            }
-        }
+  }
+
+  .socials {
+    //class
+    span {
+      //var
+      color: white;
+      display: block;
+      margin-bottom: 20px;
     }
+
+    //class
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      //var
+      border: 1px solid #303030;
+      object-fit: scale-down;
+
+      &:hover {
+        //var
+        border: 1px solid white;
+      }
+    }
+  }
 }
+
 .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+//nesting
+footer .email-footer label {
+  display: block;
+  //var
+  color: #aeb0b5;
+  margin-bottom: 10px;
+}
+
+//nesting
+footer .email-footer .email-input-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 270px;
+  background-color: #212121;
+  border: 1px solid #b89f5c;
+}
+
+//nesting class var
+footer .email-footer input[type="email"],
+footer .email-footer .email-input-wrapper button {
+  font-size: 16px;
+  background-color: #212121;
+  border: none;
+  color: #aeb0b5;
+  padding: 10px;
+}
+
+//nesting
+footer .email-footer .email-input-wrapper button {
+  text-transform: uppercase;
+}
+
+//class calc
+footer .email-footer input[type="email"] {
+  width: calc(100% - 62px);
+}
+
+@include screen {
+  //nesting class
+  footer {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-container {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-evenly;
-    max-width: 1200px;
+  }
+
+  footer .logo {
     width: 100%;
-    margin: 0 auto;
-}
-footer .email-footer label {
+    height: min-content;
+    margin: 20px;
+  }
+
+  footer ul {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer li {
+    margin-bottom: 5px;
+  }
+
+  footer .socials span {
+    color: white;
     display: block;
-    color: #aeb0b5;
     margin-bottom: 10px;
-}
-footer .email-footer .email-input-wrapper {
+  }
+
+  footer .socials img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #303030;
+    object-fit: scale-down;
+  }
+
+  footer form {
+    margin: 10px;
+  }
+
+  footer .email-footer label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  footer .email-footer .email-input-wrapper {
     display: flex;
     width: 100%;
     max-width: 270px;
     background-color: #212121;
     border: 1px solid #b89f5c;
-}
-footer .email-footer input[type="email"],
-footer .email-footer .email-input-wrapper button {
+  }
+
+  footer .email-footer input[type="email"],
+  footer .email-footer .email-input-wrapper button {
     font-size: 16px;
     background-color: #212121;
     border: none;
     color: #aeb0b5;
     padding: 10px;
-}
-footer .email-footer .email-input-wrapper button {
-    text-transform: uppercase;
-}
-footer .email-footer input[type="email"] {
-    width: calc(100% - 62px);
-}
+  }
 
-@include screen {
-    footer {
-        padding: 0;
-        text-align: center;
-    }
-    .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-evenly;
-    }
-    footer .logo {
-        width: 100%;
-        height: min-content;
-        margin: 20px;
-    }
-    footer ul {
-        width: 30%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    footer li {
-        margin-bottom: 5px;
-    }
-    footer .socials span {
-        color: white;
-        display: block;
-        margin-bottom: 10px;
-    }
-    footer .socials img {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        border: 1px solid #303030;
-        object-fit: scale-down;
-    }
-    footer form {
-        margin: 10px;
-    }
-    footer .email-footer label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    footer .email-footer .email-input-wrapper {
-        display: flex;
-        width: 100%;
-        max-width: 270px;
-        background-color: #212121;
-        border: 1px solid #b89f5c;
-    }
-    footer .email-footer input[type="email"],
-    footer .email-footer .email-input-wrapper button {
-        font-size: 16px;
-        background-color: #212121;
-        border: none;
-        color: #aeb0b5;
-        padding: 10px;
-    }
-    footer .email-footer .email-input-wrapper button {
-        text-transform: uppercase;
-    }
-    footer .email-footer input[type="email"] {
-        width: calc(100% - 62px);
-    }
+  footer .email-footer .email-input-wrapper button {
+    text-transform: uppercase;
+  }
+
+  footer .email-footer input[type="email"] {
+    width: calc(100% - 62px);
+  }
 }
